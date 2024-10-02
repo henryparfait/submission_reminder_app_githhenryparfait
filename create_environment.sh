@@ -93,7 +93,6 @@ chmod u+x startup.sh
 # Add 5 additional student records to submissions.txt
 
 cat <<EOL > ~/shell_scripting_lab/submission_reminder_app/assets/submissions.txt
-
 student, assignment, submission status
 here, Shell Navigation, submitted
 Noel, Shell Navigation, not submitted

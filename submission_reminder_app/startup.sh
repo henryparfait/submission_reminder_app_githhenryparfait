@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Source the config file
-source config/config.env
-
-# Navigate to the app directory and start the reminder script
-cd app
-./reminder.sh
-
-# Print a message indicating the app has started
-echo "Reminder app has started successfully!"
+# Start reminder script if it exists
+if [ -f "./app/reminder.sh" ]; then
+    echo "Starting the reminder script..."
+    bash ./app/reminder.sh
+else
+    echo "Reminder script not found. Exiting."
+fi
